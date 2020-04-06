@@ -1,0 +1,46 @@
+{
+	"get endpoint": {
+		"scope": "javascript,html",
+		"prefix": "get",
+		"body": [
+			"get('/${1:url}', (req, res) => {",
+			"\t$0",
+			"res.status(${2:statuscode})",
+			"}"
+		],
+		"description": "GET request using Express."
+	},
+	"post endpoint": {
+		"scope": "javascript,html",
+		"prefix": "post",
+		"body": [
+			"post('/${1:url}', (req, res) => {",
+			"\t$0",
+			"res.status(${2:statuscode})",
+			"}"
+		],
+		"description": "POST request using Express to create new data entries."
+	},
+	"delete endpoint": {
+		"scope": "javascript,html",
+		"prefix": "delete",
+		"body": [
+			"delete('/${1:url}', (req, res) => {",
+			"\t$0",
+			"res.status(${2:statuscode})",
+			"}"
+		],
+		"description": "DELETE request. using Express to delete data."
+	},
+	"put endpoint": {
+		"scope": "javascript,html",
+		"prefix": "put",
+		"body": [
+			"put('/${1:url}', (req, res) => {",
+			"\t$0",
+			"res.status(${2:statuscode})",
+			"}"
+		],
+		"description": "PUT request. using Express to call edits to data."
+	}
+}
